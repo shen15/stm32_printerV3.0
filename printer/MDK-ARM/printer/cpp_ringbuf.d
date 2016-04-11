@@ -1,6 +1,6 @@
-printer\cpp_ringbuf.o: ..\..\Cplusewares\cpp_ringBuf.cpp
-printer\cpp_ringbuf.o: ..\..\Cplusewares\cpp_ringBuf.h
-printer\cpp_ringbuf.o: ..\..\Cplusewares\cpp_sys.h
+printer\cpp_ringbuf.o: ..\..\stm32cubeCpp\cpp_ringBuf.cpp
+printer\cpp_ringbuf.o: ..\..\stm32cubeCpp\cpp_ringBuf.h
+printer\cpp_ringbuf.o: ..\..\stm32cubeCpp\cpp_sys.h
 printer\cpp_ringbuf.o: ../projwares/projectSys.h
 printer\cpp_ringbuf.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 printer\cpp_ringbuf.o: ../Inc/stm32f4xx_hal_conf.h

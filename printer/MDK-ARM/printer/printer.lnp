@@ -57,12 +57,13 @@
 "printer\usbd_cdc.o"
 "printer\printerhmi.o"
 "printer\printermain.o"
+"printer\cpp_adc.o"
 "printer\cpp_dac.o"
 "printer\cpp_eep.o"
 "printer\cpp_memory.o"
-"printer\cpp_serial.o"
 "printer\cpp_ringbuf.o"
 "printer\cpp_hmiusart.o"
+"printer\cpp_serial.o"
 --library_type=microlib --strict --scatter "printer\printer.sct"
 
 --diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols

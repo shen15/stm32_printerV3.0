@@ -1,6 +1,6 @@
-printer\cpp_eep.o: ..\..\Cplusewares\cpp_eep.cpp
-printer\cpp_eep.o: ..\..\Cplusewares\cpp_eep.h
-printer\cpp_eep.o: ..\..\Cplusewares\cpp_sys.h
+printer\cpp_eep.o: ..\..\stm32cubeCpp\cpp_eep.cpp
+printer\cpp_eep.o: ..\..\stm32cubeCpp\cpp_eep.h
+printer\cpp_eep.o: ..\..\stm32cubeCpp\cpp_sys.h
 printer\cpp_eep.o: ../projwares/projectSys.h
 printer\cpp_eep.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 printer\cpp_eep.o: ../Inc/stm32f4xx_hal_conf.h

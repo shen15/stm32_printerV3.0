@@ -1,7 +1,7 @@
 printer\printerhmi.o: ..\projwares\printerHmi.cpp
 printer\printerhmi.o: ..\projwares\printerHmi.h
-printer\printerhmi.o: ../../Cplusewares/cpp_hmiUsart.h
-printer\printerhmi.o: ../../Cplusewares/cpp_sys.h
+printer\printerhmi.o: ..\..\stm32cubeCpp\cpp_hmiUsart.h
+printer\printerhmi.o: ..\..\stm32cubeCpp\cpp_sys.h
 printer\printerhmi.o: ../projwares/projectSys.h
 printer\printerhmi.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 printer\printerhmi.o: ../Inc/stm32f4xx_hal_conf.h
@@ -60,10 +60,10 @@ printer\printerhmi.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timers.
 printer\printerhmi.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 printer\printerhmi.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 printer\printerhmi.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
-printer\printerhmi.o: ../../Cplusewares/cpp_memory.h
-printer\printerhmi.o: ../../Cplusewares/cpp_serial.h
-printer\printerhmi.o: ../../Cplusewares/cpp_ringBuf.h
+printer\printerhmi.o: ..\..\stm32cubeCpp\cpp_memory.h
+printer\printerhmi.o: ..\..\stm32cubeCpp\cpp_serial.h
+printer\printerhmi.o: ..\..\stm32cubeCpp\cpp_ringBuf.h
 printer\printerhmi.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 printer\printerhmi.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 printer\printerhmi.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
-printer\printerhmi.o: ../../Cplusewares/cpp_eep.h
+printer\printerhmi.o: ..\..\stm32cubeCpp\cpp_eep.h

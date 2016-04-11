@@ -1,6 +1,6 @@
-printer\cpp_hmiusart.o: ..\..\Cplusewares\cpp_hmiUsart.cpp
-printer\cpp_hmiusart.o: ..\..\Cplusewares\cpp_hmiUsart.h
-printer\cpp_hmiusart.o: ..\..\Cplusewares\cpp_sys.h
+printer\cpp_hmiusart.o: ..\..\stm32cubeCpp\cpp_hmiUsart.cpp
+printer\cpp_hmiusart.o: ..\..\stm32cubeCpp\cpp_hmiUsart.h
+printer\cpp_hmiusart.o: ..\..\stm32cubeCpp\cpp_sys.h
 printer\cpp_hmiusart.o: ../projwares/projectSys.h
 printer\cpp_hmiusart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 printer\cpp_hmiusart.o: ../Inc/stm32f4xx_hal_conf.h
@@ -59,9 +59,9 @@ printer\cpp_hmiusart.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/timer
 printer\cpp_hmiusart.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 printer\cpp_hmiusart.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 printer\cpp_hmiusart.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
-printer\cpp_hmiusart.o: ..\..\Cplusewares\cpp_memory.h
-printer\cpp_hmiusart.o: ..\..\Cplusewares\cpp_serial.h
-printer\cpp_hmiusart.o: ..\..\Cplusewares\cpp_ringBuf.h
+printer\cpp_hmiusart.o: ..\..\stm32cubeCpp\cpp_memory.h
+printer\cpp_hmiusart.o: ..\..\stm32cubeCpp\cpp_serial.h
+printer\cpp_hmiusart.o: ..\..\stm32cubeCpp\cpp_ringBuf.h
 printer\cpp_hmiusart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 printer\cpp_hmiusart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 printer\cpp_hmiusart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

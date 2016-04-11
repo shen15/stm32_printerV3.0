@@ -1330,6 +1330,7 @@ Section Cross References
     printermain.o(.ARM.exidx) refers to printermain.o(i.cdc_ReceiveTest) for i.cdc_ReceiveTest
     printermain.o(.ARM.exidx) refers to printermain.o(i.HAL_TIM_OC_DelayElapsedCallback) for i.HAL_TIM_OC_DelayElapsedCallback
     printermain.o(.ARM.exidx) refers to printermain.o(i.assert_failed_print) for i.assert_failed_print
+    cpp_adc.o(.ARM.exidx) refers to cpp_adc.o(i._ZN5c_adcC1EP17ADC_HandleTypeDefj) for i._ZN5c_adcC1EP17ADC_HandleTypeDefj
     cpp_dac.o(i._ZN5c_dac10setPercentEt) refers to cpp_dac.o(i._ZN5c_dac4initEv) for c_dac::init()
     cpp_dac.o(i._ZN5c_dac10setPercentEt) refers to stm32f4xx_hal_dac.o(i.HAL_DAC_SetValue) for HAL_DAC_SetValue
     cpp_dac.o(i._ZN5c_dac10setVoltageEf) refers to cpp_dac.o(i._ZN5c_dac4initEv) for c_dac::init()
@@ -1378,6 +1379,55 @@ Section Cross References
     cpp_memory.o(.ARM.exidx) refers to cpp_memory.o(i._ZN8c_memory7memUsedEv) for i._ZN8c_memory7memUsedEv
     cpp_memory.o(.ARM.exidx) refers to cpp_memory.o(i._ZN8c_memory6memcpyEPvS0_j) for i._ZN8c_memory6memcpyEPvS0_j
     cpp_memory.o(.ARM.exidx) refers to cpp_memory.o(i._ZN8c_memory6memsetEPvhj) for i._ZN8c_memory6memsetEPvhj
+    cpp_ringbuf.o(.ARM.exidx) refers to cpp_ringbuf.o(i._ZN9c_ringBuf4initEP11ring_buffertPh) for i._ZN9c_ringBuf4initEP11ring_buffertPh
+    cpp_ringbuf.o(.ARM.exidx) refers to cpp_ringbuf.o(i._ZN9c_ringBuf6isFullEP11ring_buffer) for i._ZN9c_ringBuf6isFullEP11ring_buffer
+    cpp_ringbuf.o(.ARM.exidx) refers to cpp_ringbuf.o(i._ZN9c_ringBuf7isEmptyEP11ring_buffer) for i._ZN9c_ringBuf7isEmptyEP11ring_buffer
+    cpp_ringbuf.o(.ARM.exidx) refers to cpp_ringbuf.o(i._ZN9c_ringBuf6insertEP11ring_bufferh) for i._ZN9c_ringBuf6insertEP11ring_bufferh
+    cpp_ringbuf.o(.ARM.exidx) refers to cpp_ringbuf.o(i._ZN9c_ringBuf6removeEP11ring_buffer) for i._ZN9c_ringBuf6removeEP11ring_buffer
+    cpp_ringbuf.o(.ARM.exidx) refers to cpp_ringbuf.o(i._ZN9c_ringBuf5resetEP11ring_buffer) for i._ZN9c_ringBuf5resetEP11ring_buffer
+    cpp_ringbuf.o(.ARM.exidx) refers to cpp_ringbuf.o(i._ZN9c_ringBuf12getNextIndexEP11ring_buffert) for i._ZN9c_ringBuf12getNextIndexEP11ring_buffert
+    cpp_ringbuf.o(.ARM.exidx) refers to cpp_ringbuf.o(i._ZN9c_ringBuf11getPreIndexEP11ring_buffert) for i._ZN9c_ringBuf11getPreIndexEP11ring_buffert
+    cpp_ringbuf.o(.ARM.exidx) refers to cpp_ringbuf.o(i._ZN9c_ringBuf6getLenEP11ring_buffer) for i._ZN9c_ringBuf6getLenEP11ring_buffer
+    cpp_hmiusart.o(i._ZN5c_hmi4initEPfPPcS2_h) refers to cpp_memory.o(i._ZN8c_memory6mallocEj) for c_memory::malloc(unsigned)
+    cpp_hmiusart.o(i._ZN5c_hmi4initEv) refers to cpp_serial.o(i._ZN8c_serial5writeEh) for c_serial::write(unsigned char)
+    cpp_hmiusart.o(i._ZN5c_hmi4initEv) refers to cpp_serial.o(i._ZN8c_serial9getRxSizeEv) for c_serial::getRxSize()
+    cpp_hmiusart.o(i._ZN5c_hmi4initEv) refers to cpp_memory.o(i._ZN8c_memory6mallocEj) for c_memory::malloc(unsigned)
+    cpp_hmiusart.o(i._ZN5c_hmi6decodeEPhh) refers to cpp_memory.o(i._ZN8c_memory4freeEPv) for c_memory::free(void*)
+    cpp_hmiusart.o(i._ZN5c_hmi6decodeEPhh) refers to cpp_memory.o(i._ZN8c_memory6mallocEj) for c_memory::malloc(unsigned)
+    cpp_hmiusart.o(i._ZN5c_hmi6setTxtEPcS0_) refers to cpp_serial.o(i._ZN8c_serial6printfEPKcz) for c_serial::printf(const char*, ...)
+    cpp_hmiusart.o(i._ZN5c_hmi6setTxtEPcS0_) refers to cpp_serial.o(i._ZN8c_serial5writeEh) for c_serial::write(unsigned char)
+    cpp_hmiusart.o(i._ZN5c_hmi6setTxtEPcf) refers to f2d.o(.text) for __aeabi_f2d
+    cpp_hmiusart.o(i._ZN5c_hmi6setTxtEPcf) refers to cpp_serial.o(i._ZN8c_serial6printfEPKcz) for c_serial::printf(const char*, ...)
+    cpp_hmiusart.o(i._ZN5c_hmi6setTxtEPcf) refers to cpp_serial.o(i._ZN8c_serial5writeEh) for c_serial::write(unsigned char)
+    cpp_hmiusart.o(i._ZN5c_hmi6setTxtEPch) refers to cpp_serial.o(i._ZN8c_serial6printfEPKcz) for c_serial::printf(const char*, ...)
+    cpp_hmiusart.o(i._ZN5c_hmi6setTxtEPch) refers to cpp_serial.o(i._ZN8c_serial5writeEh) for c_serial::write(unsigned char)
+    cpp_hmiusart.o(i._ZN5c_hmi6setValEPcS0_) refers to cpp_serial.o(i._ZN8c_serial6printfEPKcz) for c_serial::printf(const char*, ...)
+    cpp_hmiusart.o(i._ZN5c_hmi6setValEPcS0_) refers to cpp_serial.o(i._ZN8c_serial5writeEh) for c_serial::write(unsigned char)
+    cpp_hmiusart.o(i._ZN5c_hmi6setValEPch) refers to cpp_serial.o(i._ZN8c_serial6printfEPKcz) for c_serial::printf(const char*, ...)
+    cpp_hmiusart.o(i._ZN5c_hmi6setValEPch) refers to cpp_serial.o(i._ZN8c_serial5writeEh) for c_serial::write(unsigned char)
+    cpp_hmiusart.o(i._ZN5c_hmi7hmiLoopEv) refers to cpp_hmiusart.o(i._ZN5c_hmi4initEv) for c_hmi::init()
+    cpp_hmiusart.o(i._ZN5c_hmi7hmiLoopEv) refers to cpp_serial.o(i._ZN8c_serial9availableEv) for c_serial::available()
+    cpp_hmiusart.o(i._ZN5c_hmi7hmiLoopEv) refers to cpp_serial.o(i._ZN8c_serial4readEPht) for c_serial::read(unsigned char*, unsigned short)
+    cpp_hmiusart.o(i._ZN5c_hmi7hmiLoopEv) refers to cpp_hmiusart.o(i._ZN5c_hmi6decodeEPhh) for c_hmi::decode(unsigned char*, unsigned char)
+    cpp_hmiusart.o(i._ZN5c_hmi7hmiLoopEv) refers to atoi.o(.text) for atoi
+    cpp_hmiusart.o(i._ZN5c_hmi7hmiLoopEv) refers to cpp_hmiusart.o(i._ZSt6strchrPci) for std::strchr(char*, int)
+    cpp_hmiusart.o(i._ZN5c_hmi7hmiLoopEv) refers to cpp_hmiusart.o(i._ZN5c_hmi6setTxtEPcf) for c_hmi::setTxt(char*, float)
+    cpp_hmiusart.o(i._ZN5c_hmi7hmiLoopEv) refers to cpp_hmiusart.o(i._ZN5c_hmi6setValEPch) for c_hmi::setVal(char*, unsigned char)
+    cpp_hmiusart.o(i._ZN5c_hmi7hmiLoopEv) refers to cpp_hmiusart.o(i._ZN5c_hmi6setTxtEPcS0_) for c_hmi::setTxt(char*, char*)
+    cpp_hmiusart.o(i._ZN5c_hmi7hmiLoopEv) refers to atof.o(i.__hardfp_atof) for __hardfp_atof
+    cpp_hmiusart.o(i._ZN5c_hmi7hmiLoopEv) refers to d2f.o(.text) for __aeabi_d2f
+    cpp_hmiusart.o(i._ZN5c_hmi7hmiLoopEv) refers to cpp_memory.o(i._ZN8c_memory6memcpyEPvS0_j) for c_memory::memcpy(void*, void*, unsigned)
+    cpp_hmiusart.o(i._ZN5c_hmiC1EP8c_serial) refers to cpp_memory.o(i._ZN8c_memoryC1Ev) for c_memory::c_memory()
+    cpp_hmiusart.o(.ARM.exidx) refers to cpp_hmiusart.o(i._ZN5c_hmiC1EP8c_serial) for i._ZN5c_hmiC1EP8c_serial
+    cpp_hmiusart.o(.ARM.exidx) refers to cpp_hmiusart.o(i._ZN5c_hmi4initEPfPPcS2_h) for i._ZN5c_hmi4initEPfPPcS2_h
+    cpp_hmiusart.o(.ARM.exidx) refers to cpp_hmiusart.o(i._ZN5c_hmi6setTxtEPcS0_) for i._ZN5c_hmi6setTxtEPcS0_
+    cpp_hmiusart.o(.ARM.exidx) refers to cpp_hmiusart.o(i._ZN5c_hmi6setTxtEPch) for i._ZN5c_hmi6setTxtEPch
+    cpp_hmiusart.o(.ARM.exidx) refers to cpp_hmiusart.o(i._ZN5c_hmi6setTxtEPcf) for i._ZN5c_hmi6setTxtEPcf
+    cpp_hmiusart.o(.ARM.exidx) refers to cpp_hmiusart.o(i._ZN5c_hmi6setValEPcS0_) for i._ZN5c_hmi6setValEPcS0_
+    cpp_hmiusart.o(.ARM.exidx) refers to cpp_hmiusart.o(i._ZN5c_hmi6setValEPch) for i._ZN5c_hmi6setValEPch
+    cpp_hmiusart.o(.ARM.exidx) refers to cpp_hmiusart.o(i._ZN5c_hmi6decodeEPhh) for i._ZN5c_hmi6decodeEPhh
+    cpp_hmiusart.o(.ARM.exidx) refers to cpp_hmiusart.o(i._ZN5c_hmi4initEv) for i._ZN5c_hmi4initEv
+    cpp_hmiusart.o(.ARM.exidx) refers to cpp_hmiusart.o(i._ZN5c_hmi7hmiLoopEv) for i._ZN5c_hmi7hmiLoopEv
     cpp_serial.o(i._ZN8c_serial10rxIdleBackEv) refers to cpp_serial.o(i._ZN8c_serial4initEv) for c_serial::init()
     cpp_serial.o(i._ZN8c_serial10rxIdleBackEv) refers to cmsis_os.o(i.osSemaphoreRelease) for osSemaphoreRelease
     cpp_serial.o(i._ZN8c_serial13writeCallBackEv) refers to cpp_serial.o(i._ZN8c_serial4initEv) for c_serial::init()
@@ -1428,55 +1478,6 @@ Section Cross References
     cpp_serial.o(.ARM.exidx) refers to cpp_serial.o(i._ZN8c_serial13writeCallBackEv) for i._ZN8c_serial13writeCallBackEv
     cpp_serial.o(.ARM.exidx) refers to cpp_serial.o(i._ZN8c_serial10rxIdleBackEv) for i._ZN8c_serial10rxIdleBackEv
     cpp_serial.o(.ARM.exidx) refers to cpp_serial.o(i._ZN8c_serial5writeEh) for i._ZN8c_serial5writeEh
-    cpp_ringbuf.o(.ARM.exidx) refers to cpp_ringbuf.o(i._ZN9c_ringBuf4initEP11ring_buffertPh) for i._ZN9c_ringBuf4initEP11ring_buffertPh
-    cpp_ringbuf.o(.ARM.exidx) refers to cpp_ringbuf.o(i._ZN9c_ringBuf6isFullEP11ring_buffer) for i._ZN9c_ringBuf6isFullEP11ring_buffer
-    cpp_ringbuf.o(.ARM.exidx) refers to cpp_ringbuf.o(i._ZN9c_ringBuf7isEmptyEP11ring_buffer) for i._ZN9c_ringBuf7isEmptyEP11ring_buffer
-    cpp_ringbuf.o(.ARM.exidx) refers to cpp_ringbuf.o(i._ZN9c_ringBuf6insertEP11ring_bufferh) for i._ZN9c_ringBuf6insertEP11ring_bufferh
-    cpp_ringbuf.o(.ARM.exidx) refers to cpp_ringbuf.o(i._ZN9c_ringBuf6removeEP11ring_buffer) for i._ZN9c_ringBuf6removeEP11ring_buffer
-    cpp_ringbuf.o(.ARM.exidx) refers to cpp_ringbuf.o(i._ZN9c_ringBuf5resetEP11ring_buffer) for i._ZN9c_ringBuf5resetEP11ring_buffer
-    cpp_ringbuf.o(.ARM.exidx) refers to cpp_ringbuf.o(i._ZN9c_ringBuf12getNextIndexEP11ring_buffert) for i._ZN9c_ringBuf12getNextIndexEP11ring_buffert
-    cpp_ringbuf.o(.ARM.exidx) refers to cpp_ringbuf.o(i._ZN9c_ringBuf11getPreIndexEP11ring_buffert) for i._ZN9c_ringBuf11getPreIndexEP11ring_buffert
-    cpp_ringbuf.o(.ARM.exidx) refers to cpp_ringbuf.o(i._ZN9c_ringBuf6getLenEP11ring_buffer) for i._ZN9c_ringBuf6getLenEP11ring_buffer
-    cpp_hmiusart.o(i._ZN5c_hmi4initEPfPPcS2_h) refers to cpp_memory.o(i._ZN8c_memory6mallocEj) for c_memory::malloc(unsigned)
-    cpp_hmiusart.o(i._ZN5c_hmi4initEv) refers to cpp_serial.o(i._ZN8c_serial5writeEh) for c_serial::write(unsigned char)
-    cpp_hmiusart.o(i._ZN5c_hmi4initEv) refers to cpp_serial.o(i._ZN8c_serial9getRxSizeEv) for c_serial::getRxSize()
-    cpp_hmiusart.o(i._ZN5c_hmi4initEv) refers to cpp_memory.o(i._ZN8c_memory6mallocEj) for c_memory::malloc(unsigned)
-    cpp_hmiusart.o(i._ZN5c_hmi6decodeEPhh) refers to cpp_memory.o(i._ZN8c_memory4freeEPv) for c_memory::free(void*)
-    cpp_hmiusart.o(i._ZN5c_hmi6decodeEPhh) refers to cpp_memory.o(i._ZN8c_memory6mallocEj) for c_memory::malloc(unsigned)
-    cpp_hmiusart.o(i._ZN5c_hmi6setTxtEPcS0_) refers to cpp_serial.o(i._ZN8c_serial6printfEPKcz) for c_serial::printf(const char*, ...)
-    cpp_hmiusart.o(i._ZN5c_hmi6setTxtEPcS0_) refers to cpp_serial.o(i._ZN8c_serial5writeEh) for c_serial::write(unsigned char)
-    cpp_hmiusart.o(i._ZN5c_hmi6setTxtEPcf) refers to f2d.o(.text) for __aeabi_f2d
-    cpp_hmiusart.o(i._ZN5c_hmi6setTxtEPcf) refers to cpp_serial.o(i._ZN8c_serial6printfEPKcz) for c_serial::printf(const char*, ...)
-    cpp_hmiusart.o(i._ZN5c_hmi6setTxtEPcf) refers to cpp_serial.o(i._ZN8c_serial5writeEh) for c_serial::write(unsigned char)
-    cpp_hmiusart.o(i._ZN5c_hmi6setTxtEPch) refers to cpp_serial.o(i._ZN8c_serial6printfEPKcz) for c_serial::printf(const char*, ...)
-    cpp_hmiusart.o(i._ZN5c_hmi6setTxtEPch) refers to cpp_serial.o(i._ZN8c_serial5writeEh) for c_serial::write(unsigned char)
-    cpp_hmiusart.o(i._ZN5c_hmi6setValEPcS0_) refers to cpp_serial.o(i._ZN8c_serial6printfEPKcz) for c_serial::printf(const char*, ...)
-    cpp_hmiusart.o(i._ZN5c_hmi6setValEPcS0_) refers to cpp_serial.o(i._ZN8c_serial5writeEh) for c_serial::write(unsigned char)
-    cpp_hmiusart.o(i._ZN5c_hmi6setValEPch) refers to cpp_serial.o(i._ZN8c_serial6printfEPKcz) for c_serial::printf(const char*, ...)
-    cpp_hmiusart.o(i._ZN5c_hmi6setValEPch) refers to cpp_serial.o(i._ZN8c_serial5writeEh) for c_serial::write(unsigned char)
-    cpp_hmiusart.o(i._ZN5c_hmi7hmiLoopEv) refers to cpp_hmiusart.o(i._ZN5c_hmi4initEv) for c_hmi::init()
-    cpp_hmiusart.o(i._ZN5c_hmi7hmiLoopEv) refers to cpp_serial.o(i._ZN8c_serial9availableEv) for c_serial::available()
-    cpp_hmiusart.o(i._ZN5c_hmi7hmiLoopEv) refers to cpp_serial.o(i._ZN8c_serial4readEPht) for c_serial::read(unsigned char*, unsigned short)
-    cpp_hmiusart.o(i._ZN5c_hmi7hmiLoopEv) refers to cpp_hmiusart.o(i._ZN5c_hmi6decodeEPhh) for c_hmi::decode(unsigned char*, unsigned char)
-    cpp_hmiusart.o(i._ZN5c_hmi7hmiLoopEv) refers to atoi.o(.text) for atoi
-    cpp_hmiusart.o(i._ZN5c_hmi7hmiLoopEv) refers to cpp_hmiusart.o(i._ZSt6strchrPci) for std::strchr(char*, int)
-    cpp_hmiusart.o(i._ZN5c_hmi7hmiLoopEv) refers to cpp_hmiusart.o(i._ZN5c_hmi6setTxtEPcf) for c_hmi::setTxt(char*, float)
-    cpp_hmiusart.o(i._ZN5c_hmi7hmiLoopEv) refers to cpp_hmiusart.o(i._ZN5c_hmi6setValEPch) for c_hmi::setVal(char*, unsigned char)
-    cpp_hmiusart.o(i._ZN5c_hmi7hmiLoopEv) refers to cpp_hmiusart.o(i._ZN5c_hmi6setTxtEPcS0_) for c_hmi::setTxt(char*, char*)
-    cpp_hmiusart.o(i._ZN5c_hmi7hmiLoopEv) refers to atof.o(i.__hardfp_atof) for __hardfp_atof
-    cpp_hmiusart.o(i._ZN5c_hmi7hmiLoopEv) refers to d2f.o(.text) for __aeabi_d2f
-    cpp_hmiusart.o(i._ZN5c_hmi7hmiLoopEv) refers to cpp_memory.o(i._ZN8c_memory6memcpyEPvS0_j) for c_memory::memcpy(void*, void*, unsigned)
-    cpp_hmiusart.o(i._ZN5c_hmiC1EP8c_serial) refers to cpp_memory.o(i._ZN8c_memoryC1Ev) for c_memory::c_memory()
-    cpp_hmiusart.o(.ARM.exidx) refers to cpp_hmiusart.o(i._ZN5c_hmiC1EP8c_serial) for i._ZN5c_hmiC1EP8c_serial
-    cpp_hmiusart.o(.ARM.exidx) refers to cpp_hmiusart.o(i._ZN5c_hmi4initEPfPPcS2_h) for i._ZN5c_hmi4initEPfPPcS2_h
-    cpp_hmiusart.o(.ARM.exidx) refers to cpp_hmiusart.o(i._ZN5c_hmi6setTxtEPcS0_) for i._ZN5c_hmi6setTxtEPcS0_
-    cpp_hmiusart.o(.ARM.exidx) refers to cpp_hmiusart.o(i._ZN5c_hmi6setTxtEPch) for i._ZN5c_hmi6setTxtEPch
-    cpp_hmiusart.o(.ARM.exidx) refers to cpp_hmiusart.o(i._ZN5c_hmi6setTxtEPcf) for i._ZN5c_hmi6setTxtEPcf
-    cpp_hmiusart.o(.ARM.exidx) refers to cpp_hmiusart.o(i._ZN5c_hmi6setValEPcS0_) for i._ZN5c_hmi6setValEPcS0_
-    cpp_hmiusart.o(.ARM.exidx) refers to cpp_hmiusart.o(i._ZN5c_hmi6setValEPch) for i._ZN5c_hmi6setValEPch
-    cpp_hmiusart.o(.ARM.exidx) refers to cpp_hmiusart.o(i._ZN5c_hmi6decodeEPhh) for i._ZN5c_hmi6decodeEPhh
-    cpp_hmiusart.o(.ARM.exidx) refers to cpp_hmiusart.o(i._ZN5c_hmi4initEv) for i._ZN5c_hmi4initEv
-    cpp_hmiusart.o(.ARM.exidx) refers to cpp_hmiusart.o(i._ZN5c_hmi7hmiLoopEv) for i._ZN5c_hmi7hmiLoopEv
     atof.o(i.__hardfp_atof) refers (Special) to iusefp.o(.text) for __I$use$fp
     atof.o(i.__hardfp_atof) refers to errno.o(i.__read_errno) for __read_errno
     atof.o(i.__hardfp_atof) refers to strtod.o(.text) for __strtod_int
@@ -2457,6 +2458,11 @@ Removing Unused input sections from the image.
     Removing printermain.o(.bss), (1024 bytes).
     Removing printermain.o(.bss), (1024 bytes).
     Removing printermain.o(.data), (1 bytes).
+    Removing cpp_adc.o(.rev16_text), (4 bytes).
+    Removing cpp_adc.o(.revsh_text), (4 bytes).
+    Removing cpp_adc.o(.rrx_text), (6 bytes).
+    Removing cpp_adc.o(i._ZN5c_adcC1EP17ADC_HandleTypeDefj), (6 bytes).
+    Removing cpp_adc.o(.ARM.exidx), (8 bytes).
     Removing cpp_dac.o(.rev16_text), (4 bytes).
     Removing cpp_dac.o(.revsh_text), (4 bytes).
     Removing cpp_dac.o(.rrx_text), (6 bytes).
@@ -2503,33 +2509,6 @@ Removing Unused input sections from the image.
     Removing cpp_memory.o(.ARM.exidx), (8 bytes).
     Removing cpp_memory.o(.bss), (17280 bytes).
     Removing cpp_memory.o(.data), (8 bytes).
-    Removing cpp_serial.o(.rev16_text), (4 bytes).
-    Removing cpp_serial.o(.revsh_text), (4 bytes).
-    Removing cpp_serial.o(.rrx_text), (6 bytes).
-    Removing cpp_serial.o(i._ZN8c_serial10rxIdleBackEv), (54 bytes).
-    Removing cpp_serial.o(i._ZN8c_serial13writeCallBackEv), (90 bytes).
-    Removing cpp_serial.o(i._ZN8c_serial4initEv), (118 bytes).
-    Removing cpp_serial.o(i._ZN8c_serial4readEPht), (44 bytes).
-    Removing cpp_serial.o(i._ZN8c_serial4readEv), (20 bytes).
-    Removing cpp_serial.o(i._ZN8c_serial5writeEPht), (86 bytes).
-    Removing cpp_serial.o(i._ZN8c_serial5writeEh), (20 bytes).
-    Removing cpp_serial.o(i._ZN8c_serial6printfEPKcz), (132 bytes).
-    Removing cpp_serial.o(i._ZN8c_serial9availableEj), (48 bytes).
-    Removing cpp_serial.o(i._ZN8c_serial9availableEv), (22 bytes).
-    Removing cpp_serial.o(i._ZN8c_serial9getRxSizeEv), (14 bytes).
-    Removing cpp_serial.o(i._ZN8c_serialC1EP18UART_HandleTypeDeftt14IO_ModeTypeDef), (36 bytes).
-    Removing cpp_serial.o(.ARM.exidx), (8 bytes).
-    Removing cpp_serial.o(.ARM.exidx), (8 bytes).
-    Removing cpp_serial.o(.ARM.exidx), (8 bytes).
-    Removing cpp_serial.o(.ARM.exidx), (8 bytes).
-    Removing cpp_serial.o(.ARM.exidx), (8 bytes).
-    Removing cpp_serial.o(.ARM.exidx), (8 bytes).
-    Removing cpp_serial.o(.ARM.exidx), (8 bytes).
-    Removing cpp_serial.o(.ARM.exidx), (8 bytes).
-    Removing cpp_serial.o(.ARM.exidx), (8 bytes).
-    Removing cpp_serial.o(.ARM.exidx), (8 bytes).
-    Removing cpp_serial.o(.ARM.exidx), (8 bytes).
-    Removing cpp_serial.o(.ARM.exidx), (8 bytes).
     Removing cpp_ringbuf.o(.rev16_text), (4 bytes).
     Removing cpp_ringbuf.o(.revsh_text), (4 bytes).
     Removing cpp_ringbuf.o(.rrx_text), (6 bytes).
@@ -2574,6 +2553,33 @@ Removing Unused input sections from the image.
     Removing cpp_hmiusart.o(.ARM.exidx), (8 bytes).
     Removing cpp_hmiusart.o(.ARM.exidx), (8 bytes).
     Removing cpp_hmiusart.o(.ARM.exidx), (8 bytes).
+    Removing cpp_serial.o(.rev16_text), (4 bytes).
+    Removing cpp_serial.o(.revsh_text), (4 bytes).
+    Removing cpp_serial.o(.rrx_text), (6 bytes).
+    Removing cpp_serial.o(i._ZN8c_serial10rxIdleBackEv), (54 bytes).
+    Removing cpp_serial.o(i._ZN8c_serial13writeCallBackEv), (90 bytes).
+    Removing cpp_serial.o(i._ZN8c_serial4initEv), (118 bytes).
+    Removing cpp_serial.o(i._ZN8c_serial4readEPht), (44 bytes).
+    Removing cpp_serial.o(i._ZN8c_serial4readEv), (20 bytes).
+    Removing cpp_serial.o(i._ZN8c_serial5writeEPht), (86 bytes).
+    Removing cpp_serial.o(i._ZN8c_serial5writeEh), (20 bytes).
+    Removing cpp_serial.o(i._ZN8c_serial6printfEPKcz), (132 bytes).
+    Removing cpp_serial.o(i._ZN8c_serial9availableEj), (48 bytes).
+    Removing cpp_serial.o(i._ZN8c_serial9availableEv), (22 bytes).
+    Removing cpp_serial.o(i._ZN8c_serial9getRxSizeEv), (14 bytes).
+    Removing cpp_serial.o(i._ZN8c_serialC1EP18UART_HandleTypeDeftt14IO_ModeTypeDef), (36 bytes).
+    Removing cpp_serial.o(.ARM.exidx), (8 bytes).
+    Removing cpp_serial.o(.ARM.exidx), (8 bytes).
+    Removing cpp_serial.o(.ARM.exidx), (8 bytes).
+    Removing cpp_serial.o(.ARM.exidx), (8 bytes).
+    Removing cpp_serial.o(.ARM.exidx), (8 bytes).
+    Removing cpp_serial.o(.ARM.exidx), (8 bytes).
+    Removing cpp_serial.o(.ARM.exidx), (8 bytes).
+    Removing cpp_serial.o(.ARM.exidx), (8 bytes).
+    Removing cpp_serial.o(.ARM.exidx), (8 bytes).
+    Removing cpp_serial.o(.ARM.exidx), (8 bytes).
+    Removing cpp_serial.o(.ARM.exidx), (8 bytes).
+    Removing cpp_serial.o(.ARM.exidx), (8 bytes).
     Removing f2d.o(.text), (38 bytes).
     Removing d2f.o(.text), (56 bytes).
     Removing fepilogue.o(.text), (110 bytes).
@@ -2587,7 +2593,7 @@ Removing Unused input sections from the image.
     Removing cpp_hmiusart.o(i._ZSt6strchrPci), (4 bytes).
     Removing cpp_hmiusart.o(.ARM.exidx), (8 bytes).
 
-946 unused section(s) (total 80749 bytes) removed from the image.
+951 unused section(s) (total 80777 bytes) removed from the image.
 
 ==============================================================================
 
@@ -2653,8 +2659,10 @@ Image Symbol Table
     ../Src/usbd_conf.c                       0x00000000   Number         0  usbd_conf.o ABSOLUTE
     ../Src/usbd_desc.c                       0x00000000   Number         0  usbd_desc.o ABSOLUTE
     ../clib/../cmprslib/zerorunl2.c          0x00000000   Number         0  __dczerorl2.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  ctype_o.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isspace_c.o ABSOLUTE
     ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isdigit_o.o ABSOLUTE
-    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isalpha_o.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  ctype_c.o ABSOLUTE
     ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isxdigit_o.o ABSOLUTE
     ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isupper_o.o ABSOLUTE
     ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isspace_o.o ABSOLUTE
@@ -2662,35 +2670,33 @@ Image Symbol Table
     ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isprint_o.o ABSOLUTE
     ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  islower_o.o ABSOLUTE
     ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isgraph_o.o ABSOLUTE
-    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isalnum_o.o ABSOLUTE
-    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isspace_c.o ABSOLUTE
     ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  iscntrl_o.o ABSOLUTE
-    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  ctype_o.o ABSOLUTE
     ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isblank_o.o ABSOLUTE
-    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  ctype_c.o ABSOLUTE
-    ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isalpha_o.o ABSOLUTE
+    ../clib/microlib/ctype/ctype.c           0x00000000   Number         0  isalnum_o.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
     ../clib/microlib/errno.c                 0x00000000   Number         0  errno.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
-    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
-    ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  malloca.o ABSOLUTE
     ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  malloc.o ABSOLUTE
     ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  mallocr.o ABSOLUTE
     ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  mallocra.o ABSOLUTE
+    ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  malloca.o ABSOLUTE
     ../clib/microlib/malloc/mvars.c          0x00000000   Number         0  mvars.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
     ../clib/microlib/stdio/fputc.c           0x00000000   Number         0  fputc.o ABSOLUTE
@@ -2703,12 +2709,12 @@ Image Symbol Table
     ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
     ../clib/microlib/stubs.s                 0x00000000   Number         0  iusesemip.o ABSOLUTE
     ../clib/scanf.c                          0x00000000   Number         0  strtod.o ABSOLUTE
-    ../clib/scanf.c                          0x00000000   Number         0  _chval.o ABSOLUTE
-    ../clib/scanf.c                          0x00000000   Number         0  atoi.o ABSOLUTE
-    ../clib/scanf.c                          0x00000000   Number         0  scanf_fp.o ABSOLUTE
+    ../clib/scanf.c                          0x00000000   Number         0  _strtoul.o ABSOLUTE
     ../clib/scanf.c                          0x00000000   Number         0  _sgetc.o ABSOLUTE
     ../clib/scanf.c                          0x00000000   Number         0  strtol.o ABSOLUTE
-    ../clib/scanf.c                          0x00000000   Number         0  _strtoul.o ABSOLUTE
+    ../clib/scanf.c                          0x00000000   Number         0  scanf_fp.o ABSOLUTE
+    ../clib/scanf.c                          0x00000000   Number         0  atoi.o ABSOLUTE
+    ../clib/scanf.c                          0x00000000   Number         0  _chval.o ABSOLUTE
     ../fplib/microlib/d2f.c                  0x00000000   Number         0  d2f.o ABSOLUTE
     ../fplib/microlib/f2d.c                  0x00000000   Number         0  f2d.o ABSOLUTE
     ../fplib/microlib/fpadd.c                0x00000000   Number         0  dadd.o ABSOLUTE
@@ -2719,12 +2725,13 @@ Image Symbol Table
     ../fplib/microlib/fpflt.c                0x00000000   Number         0  dfltul.o ABSOLUTE
     ../fplib/microlib/fpmul.c                0x00000000   Number         0  dmul.o ABSOLUTE
     ../mathlib/atof.c                        0x00000000   Number         0  atof.o ABSOLUTE
-    ..\..\Cplusewares\cpp_dac.cpp            0x00000000   Number         0  cpp_dac.o ABSOLUTE
-    ..\..\Cplusewares\cpp_eep.cpp            0x00000000   Number         0  cpp_eep.o ABSOLUTE
-    ..\..\Cplusewares\cpp_hmiUsart.cpp       0x00000000   Number         0  cpp_hmiusart.o ABSOLUTE
-    ..\..\Cplusewares\cpp_memory.cpp         0x00000000   Number         0  cpp_memory.o ABSOLUTE
-    ..\..\Cplusewares\cpp_ringBuf.cpp        0x00000000   Number         0  cpp_ringbuf.o ABSOLUTE
-    ..\..\Cplusewares\cpp_serial.cpp         0x00000000   Number         0  cpp_serial.o ABSOLUTE
+    ..\..\stm32cubeCpp\cpp_adc.cpp           0x00000000   Number         0  cpp_adc.o ABSOLUTE
+    ..\..\stm32cubeCpp\cpp_dac.cpp           0x00000000   Number         0  cpp_dac.o ABSOLUTE
+    ..\..\stm32cubeCpp\cpp_eep.cpp           0x00000000   Number         0  cpp_eep.o ABSOLUTE
+    ..\..\stm32cubeCpp\cpp_hmiUsart.cpp      0x00000000   Number         0  cpp_hmiusart.o ABSOLUTE
+    ..\..\stm32cubeCpp\cpp_memory.cpp        0x00000000   Number         0  cpp_memory.o ABSOLUTE
+    ..\..\stm32cubeCpp\cpp_ringBuf.cpp       0x00000000   Number         0  cpp_ringbuf.o ABSOLUTE
+    ..\..\stm32cubeCpp\cpp_serial.cpp        0x00000000   Number         0  cpp_serial.o ABSOLUTE
     ..\Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c 0x00000000   Number         0  system_stm32f4xx.o ABSOLUTE
     ..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c 0x00000000   Number         0  stm32f4xx_hal.o ABSOLUTE
     ..\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_adc.c 0x00000000   Number         0  stm32f4xx_hal_adc.o ABSOLUTE
@@ -2772,12 +2779,13 @@ Image Symbol Table
     ..\Src\usbd_cdc_if.c                     0x00000000   Number         0  usbd_cdc_if.o ABSOLUTE
     ..\Src\usbd_conf.c                       0x00000000   Number         0  usbd_conf.o ABSOLUTE
     ..\Src\usbd_desc.c                       0x00000000   Number         0  usbd_desc.o ABSOLUTE
-    ..\\..\\Cplusewares\\cpp_dac.cpp         0x00000000   Number         0  cpp_dac.o ABSOLUTE
-    ..\\..\\Cplusewares\\cpp_eep.cpp         0x00000000   Number         0  cpp_eep.o ABSOLUTE
-    ..\\..\\Cplusewares\\cpp_hmiUsart.cpp    0x00000000   Number         0  cpp_hmiusart.o ABSOLUTE
-    ..\\..\\Cplusewares\\cpp_memory.cpp      0x00000000   Number         0  cpp_memory.o ABSOLUTE
-    ..\\..\\Cplusewares\\cpp_ringBuf.cpp     0x00000000   Number         0  cpp_ringbuf.o ABSOLUTE
-    ..\\..\\Cplusewares\\cpp_serial.cpp      0x00000000   Number         0  cpp_serial.o ABSOLUTE
+    ..\\..\\stm32cubeCpp\\cpp_adc.cpp        0x00000000   Number         0  cpp_adc.o ABSOLUTE
+    ..\\..\\stm32cubeCpp\\cpp_dac.cpp        0x00000000   Number         0  cpp_dac.o ABSOLUTE
+    ..\\..\\stm32cubeCpp\\cpp_eep.cpp        0x00000000   Number         0  cpp_eep.o ABSOLUTE
+    ..\\..\\stm32cubeCpp\\cpp_hmiUsart.cpp   0x00000000   Number         0  cpp_hmiusart.o ABSOLUTE
+    ..\\..\\stm32cubeCpp\\cpp_memory.cpp     0x00000000   Number         0  cpp_memory.o ABSOLUTE
+    ..\\..\\stm32cubeCpp\\cpp_ringBuf.cpp    0x00000000   Number         0  cpp_ringbuf.o ABSOLUTE
+    ..\\..\\stm32cubeCpp\\cpp_serial.cpp     0x00000000   Number         0  cpp_serial.o ABSOLUTE
     ..\\projwares\\printerHmi.cpp            0x00000000   Number         0  printerhmi.o ABSOLUTE
     ..\\projwares\\printerMain.cpp           0x00000000   Number         0  printermain.o ABSOLUTE
     ..\projwares\printerHmi.cpp              0x00000000   Number         0  printerhmi.o ABSOLUTE
@@ -3549,22 +3557,22 @@ Memory Map of the image
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x08000000   0x00000188   Data   RO         2815    RESET               startup_stm32f407xx.o
-    0x08000188   0x00000000   Code   RO         7572  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
-    0x08000188   0x00000004   Code   RO         7645    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
-    0x0800018c   0x00000004   Code   RO         7648    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
-    0x08000190   0x00000000   Code   RO         7650    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
-    0x08000190   0x00000000   Code   RO         7652    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
-    0x08000190   0x00000008   Code   RO         7653    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
-    0x08000198   0x00000000   Code   RO         7655    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
-    0x08000198   0x00000000   Code   RO         7657    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
-    0x08000198   0x00000004   Code   RO         7646    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x08000188   0x00000000   Code   RO         7583  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x08000188   0x00000004   Code   RO         7656    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x0800018c   0x00000004   Code   RO         7659    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x08000190   0x00000000   Code   RO         7661    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x08000190   0x00000000   Code   RO         7663    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x08000190   0x00000008   Code   RO         7664    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x08000198   0x00000000   Code   RO         7666    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x08000198   0x00000000   Code   RO         7668    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x08000198   0x00000004   Code   RO         7657    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
     0x0800019c   0x000000ba   Code   RO          268    .emb_text           port.o
     0x08000256   0x00000002   PAD
     0x08000258   0x00000024   Code   RO         2816    .text               startup_stm32f407xx.o
-    0x0800027c   0x00000024   Code   RO         7575    .text               mc_w.l(memcpya.o)
-    0x080002a0   0x00000024   Code   RO         7577    .text               mc_w.l(memseta.o)
-    0x080002c4   0x00000024   Code   RO         7692    .text               mc_w.l(init.o)
-    0x080002e8   0x00000056   Code   RO         7757    .text               mc_w.l(__dczerorl2.o)
+    0x0800027c   0x00000024   Code   RO         7586    .text               mc_w.l(memcpya.o)
+    0x080002a0   0x00000024   Code   RO         7588    .text               mc_w.l(memseta.o)
+    0x080002c4   0x00000024   Code   RO         7703    .text               mc_w.l(init.o)
+    0x080002e8   0x00000056   Code   RO         7768    .text               mc_w.l(__dczerorl2.o)
     0x0800033e   0x00000002   PAD
     0x08000340   0x00000134   Code   RO         6123    i.ADC_Init          stm32f4xx_hal_adc.o
     0x08000474   0x0000000c   Code   RO         1860    i.BSP_SD_GetCardInfo  bsp_driver_sd.o
@@ -3794,14 +3802,14 @@ Memory Map of the image
     0x080046ac   0x00000008   Code   RO         2540    i._Z14temperatureTskPKv  main.o
     0x080046b4   0x00000010   Code   RO         2541    i._Z16StartDefaultTaskPKv  main.o
     0x080046c4   0x00000094   Code   RO         2542    i._Z18SystemClock_Configv  main.o
-    0x08004758   0x0000000e   Code   RO         7751    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x08004766   0x00000002   Code   RO         7752    i.__scatterload_null  mc_w.l(handlers.o)
-    0x08004768   0x0000000e   Code   RO         7753    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x08004758   0x0000000e   Code   RO         7762    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x08004766   0x00000002   Code   RO         7763    i.__scatterload_null  mc_w.l(handlers.o)
+    0x08004768   0x0000000e   Code   RO         7764    i.__scatterload_zeroinit  mc_w.l(handlers.o)
     0x08004776   0x00000002   PAD
-    0x08004778   0x00000050   Code   RO         7611    i.free              mc_w.l(malloc.o)
+    0x08004778   0x00000050   Code   RO         7622    i.free              mc_w.l(malloc.o)
     0x080047c8   0x000000c0   Code   RO         2543    i.main              main.o
     0x08004888   0x0000000c   Code   RO          905    i.makeFreeRtosPriority  cmsis_os.o
-    0x08004894   0x0000006c   Code   RO         7612    i.malloc            mc_w.l(malloc.o)
+    0x08004894   0x0000006c   Code   RO         7623    i.malloc            mc_w.l(malloc.o)
     0x08004900   0x0000000e   Code   RO          906    i.osDelay           cmsis_os.o
     0x0800490e   0x0000000a   Code   RO          909    i.osKernelStart     cmsis_os.o
     0x08004918   0x00000014   Code   RO          938    i.osSystickHandler  cmsis_os.o
@@ -3838,7 +3846,7 @@ Memory Map of the image
     0x0800531c   0x00000028   Data   RO         2553    .constdata          main.o
     0x08005344   0x00000010   Data   RO         5792    .constdata          stm32f4xx_hal_rcc.o
     0x08005354   0x00000018   Data   RO         2554    .conststring        main.o
-    0x0800536c   0x00000020   Data   RO         7749    Region$$Table       anon$$obj.o
+    0x0800536c   0x00000020   Data   RO         7760    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00004e50, Max: 0x00020000, ABSOLUTE, COMPRESSED[0x000000c8])
@@ -3864,8 +3872,8 @@ Memory Map of the image
     0x200000c8   0x000000db   Data   RW         6693    .data               usbd_cdc.o
     0x200001a3   0x00000001   PAD
     0x200001a4   0x00000038   Data   RW         6694    .data               usbd_cdc.o
-    0x200001dc   0x00000004   Data   RW         7666    .data               mc_w.l(mvars.o)
-    0x200001e0   0x00000004   Data   RW         7667    .data               mc_w.l(mvars.o)
+    0x200001dc   0x00000004   Data   RW         7677    .data               mc_w.l(mvars.o)
+    0x200001e0   0x00000004   Data   RW         7678    .data               mc_w.l(mvars.o)
     0x200001e4   0x000000f0   Zero   RW          402    .bss                tasks.o
     0x200002d4   0x00003c00   Zero   RW          643    .bss                heap_4.o
     0x20003ed4   0x0000000c   Zero   RW         1688    .bss                ff_gen_drv.o

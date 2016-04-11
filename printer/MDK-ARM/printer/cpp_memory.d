@@ -1,6 +1,6 @@
-printer\cpp_memory.o: ..\..\Cplusewares\cpp_memory.cpp
-printer\cpp_memory.o: ..\..\Cplusewares\cpp_memory.h
-printer\cpp_memory.o: ..\..\Cplusewares\cpp_sys.h
+printer\cpp_memory.o: ..\..\stm32cubeCpp\cpp_memory.cpp
+printer\cpp_memory.o: ..\..\stm32cubeCpp\cpp_memory.h
+printer\cpp_memory.o: ..\..\stm32cubeCpp\cpp_sys.h
 printer\cpp_memory.o: ../projwares/projectSys.h
 printer\cpp_memory.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 printer\cpp_memory.o: ../Inc/stm32f4xx_hal_conf.h

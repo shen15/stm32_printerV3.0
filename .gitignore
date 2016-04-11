@@ -1,5 +1,5 @@
 # Compiled Object files
-*.slo
+*.crf*.map*.lst*.axf*.dep*.slo
 *.lo
 *.o
 *.obj

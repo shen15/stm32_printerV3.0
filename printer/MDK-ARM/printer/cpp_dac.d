@@ -1,6 +1,6 @@
-printer\cpp_dac.o: ..\..\Cplusewares\cpp_dac.cpp
-printer\cpp_dac.o: ..\..\Cplusewares\cpp_dac.h
-printer\cpp_dac.o: ..\..\Cplusewares\cpp_sys.h
+printer\cpp_dac.o: ..\..\stm32cubeCpp\cpp_dac.cpp
+printer\cpp_dac.o: ..\..\stm32cubeCpp\cpp_dac.h
+printer\cpp_dac.o: ..\..\stm32cubeCpp\cpp_sys.h
 printer\cpp_dac.o: ../projwares/projectSys.h
 printer\cpp_dac.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 printer\cpp_dac.o: ../Inc/stm32f4xx_hal_conf.h
