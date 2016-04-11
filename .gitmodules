@@ -1,0 +1,3 @@
+[submodule "stm32cubeCpp"]
+	path = stm32cubeCpp
+	url = https://github.com/shen15/stm32cubeCpp.git
