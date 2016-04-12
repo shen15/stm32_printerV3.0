@@ -1,5 +1,5 @@
 --cpu Cortex-M4.fp
-"printer\system_stm32f4xx.o"
+"printer\system_stm32f4xx_1.o"
 "printer\event_groups.o"
 "printer\port.o"
 "printer\timers.o"
@@ -64,6 +64,8 @@
 "printer\cpp_ringbuf.o"
 "printer\cpp_hmiusart.o"
 "printer\cpp_serial.o"
+"printer\cpp_temperature.o"
+"printer\cpp_pwm.o"
 --library_type=microlib --strict --scatter "printer\printer.sct"
 
 --diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
