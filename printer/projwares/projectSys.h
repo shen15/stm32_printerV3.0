@@ -48,8 +48,8 @@ typedef union  sysDebugBit_union {
 	.data.mStepsMM[1] = 100,				\
 	.data.mSpeedMax[0] = 100,				\
 	.data.mSpeedMax[1] = 100,				\
-	.data.mAccelTime[0] = 0.2,				\
-	.data.mAccelTime[1] = 0.2,				\
+	.data.mAccelTime[0] = 0.2f,				\
+	.data.mAccelTime[1] = 0.2f,				\
 	.data.pPortStep[0] = 0,	\
 	.data.pPortStep[1] = 0,	\
 	.data.pPortDir[0] = 0,		\
@@ -62,6 +62,10 @@ typedef union  sysDebugBit_union {
 	.data.mPinDir[1] = 0,			\
 	.data.mPinEna[0] = 0,			\
 	.data.mPinEna[1] = 0,			\
+	.data.mPid_P[0] = 4.27926397f,	\
+	.data.mPid_I[0] = 0.188099f,	\
+	.data.mPid_D[0] = 8.76179314f,	\
+    .data.mPidBoundary[0] = 10.0f,          \
 	.data.mDeadSpeed = 30,					\
 	.data.mX_travelMax = 500,				\
 	.data.mY_travelMax = 500,				\
@@ -87,6 +91,11 @@ typedef struct EEP_struct {
 	unsigned int mPinEna[STEP_MOTO_MAX_DEV];
 	unsigned int mDeadSpeed;
 	//--
+    float mPid_P[3];
+    float mPid_I[3];
+    float mPid_D[3];
+    float mPidBoundary[3];
+    //--
     unsigned int mX_travelMax;
     unsigned int mY_travelMax;
     float mLaserCurrent;

@@ -10,6 +10,10 @@
 #include "printerMain.h"
 #include "printerHmi.h"
 //-***************************************
+c_temperature temperatureBed (&hadc1, ADC_CHANNEL_14, &htim3, TIM_CHANNEL_2, 1000, 0);
+c_temperature temperatureEnd1(&hadc1, ADC_CHANNEL_15, &htim3, TIM_CHANNEL_1, 1000, 1);
+c_temperature temperatureEnd2(&hadc1, ADC_CHANNEL_9,  &htim3, TIM_CHANNEL_3, 1000, 2);
+
 // led
 //c_gpio led(led_GPIO_Port, led_Pin);
 //
@@ -114,6 +118,19 @@ void lcdTsk() {
 //        c_eep::write();
 //    }
     //--
+}
+
+//-********************************************************************************************
+//   T E M P E R A T U R E   T S K
+    
+//-********************************************************************************************
+void temperatureTsk(void const * argument) {
+    for(;;) {
+        temperatureBed.running();
+        temperatureBed.running();
+        temperatureBed.running();
+        osDelay(TEMPERATURE_PID_DT);
+    }
 }
 //
 //-********************************************************************************************
@@ -265,8 +282,6 @@ void assert_failed_print(uint8_t* file, uint32_t line) {
 //    }
 //    debugSerial.printf("!failed! %s: %3d\r\n",file, line);
 }
-
-
 //-**********************************************************************************************************************************************************************************************
 #ifdef __cplusplus
 }

@@ -61,6 +61,8 @@ printer\printermain.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr
 printer\printermain.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h
 printer\printermain.o: ..\..\stm32cubeCpp\cpp_dac.h
 printer\printermain.o: ..\..\stm32cubeCpp\cpp_gpio.h
+printer\printermain.o: ..\..\stm32cubeCpp\cpp_adc.h
+printer\printermain.o: ..\..\stm32cubeCpp\cpp_pwm.h
 printer\printermain.o: ..\..\stm32cubeCpp\cpp_serial.h
 printer\printermain.o: ..\..\stm32cubeCpp\cpp_memory.h
 printer\printermain.o: ..\..\stm32cubeCpp\cpp_ringBuf.h
@@ -82,4 +84,7 @@ printer\printermain.o: ..\..\stm32cubeCpp\cpp_eep.h
 printer\printermain.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 printer\printermain.o: ..\..\stm32cubeCpp\cpp_repeterProtocol.h
 printer\printermain.o: ..\..\stm32cubeCpp\cpp_grblProtocol.h
+printer\printermain.o: ..\..\stm32cubeCpp\cpp_temperature.h
+printer\printermain.o: ..\..\stm32cubeCpp\cpp_adc.h
+printer\printermain.o: ..\..\stm32cubeCpp\cpp_pwm.h
 printer\printermain.o: ..\projwares\printerHmi.h

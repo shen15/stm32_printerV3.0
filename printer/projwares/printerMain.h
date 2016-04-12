@@ -12,6 +12,8 @@
 #include "cpp_sys.h"
 #include "cpp_dac.h"
 #include "cpp_gpio.h"
+#include "cpp_adc.h"
+#include "cpp_pwm.h"
 #include "cpp_serial.h"
 #include "cpp_usbSerial.h"
 #include "cpp_hmiUsart.h"
@@ -19,6 +21,7 @@
 #include "cpp_repeterProtocol.h"
 #include "cpp_grblProtocol.h"
 #include "cpp_eep.h"
+#include "cpp_temperature.h"
 //#include "cpp_sdspi.h"
 
 //-********************************************************************************************
@@ -40,7 +43,9 @@ extern UART_HandleTypeDef huart1;
 extern UART_HandleTypeDef huart2;
 extern DAC_HandleTypeDef hdac;
 //extern SPI_HandleTypeDef hspi2;
+extern ADC_HandleTypeDef hadc1;
 extern TIM_HandleTypeDef htim1;
+extern TIM_HandleTypeDef htim3;
 #endif
 //-********************************************************************************************
 

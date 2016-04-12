@@ -1,4 +1,4 @@
-printer\system_stm32f4xx.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
+printer\system_stm32f4xx.o: RTE\Device\STM32F407VE\system_stm32f4xx.c
 printer\system_stm32f4xx.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 printer\system_stm32f4xx.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h
 printer\system_stm32f4xx.o: ../Drivers/CMSIS/Include/core_cm4.h
